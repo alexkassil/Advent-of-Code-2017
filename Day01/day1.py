@@ -17,4 +17,6 @@ def inverse_captcha(inpt):
 
 if __name__ == "__main__":
     f = open("input.txt")
-    print(f.read())
+    print(inverse_captcha(f.read().strip()))
+    f.close()
+    
