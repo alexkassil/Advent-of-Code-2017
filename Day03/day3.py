@@ -37,3 +37,9 @@ def dist(num):
     if num == 1:
         return 0
     return (find_ring(num) - 1)//2 + dist_from_mid(num)
+
+def part_two():
+    vals = [0] * 21
+    vals[0] = 1
+    # Sum of entry = sum of last entries where dist = 1 or 2 but diagonal 2 
+        
