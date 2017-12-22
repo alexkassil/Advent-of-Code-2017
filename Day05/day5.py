@@ -8,5 +8,6 @@ def jumps(lst):
 
 if __name__ == "__main__":
     f = open("input.txt")
-    inpt = f.read().strip()
+    inpt = list(map(lambda x: int(x), f.read().strip().split('\n')))
     f.close()
+    print(jumps(inpt))
